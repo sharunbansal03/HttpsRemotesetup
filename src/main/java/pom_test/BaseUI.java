@@ -12,7 +12,7 @@ public class BaseUI {
 	public WebDriver setUpAndLaunchApp() {
 		System.setProperty("webdriver.chrome.driver", "C:/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); // add comment
 		driver.manage().window().maximize();
 
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
